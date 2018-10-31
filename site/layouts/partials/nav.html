@@ -1,0 +1,26 @@
+
+<div class="flex items-center justify-between ph3 flex-wrap flex-nowrap-l pt2 pt0-l">
+  <div class="flex items-center">
+    <button class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation" id="hamburger">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+
+  <nav class="w-100 order-3 order-0-l">
+    <ul class="ttu list flex pl0 tc justify-content flex-column flex-row-l">
+      {{ $currentPage := . }}
+
+      {{ range .Site.Menus.main }}
+        <li class="">
+          <a href="{{ .URL }}" class="dib b--sea-buckthorn pa3 no-underline scorpion {{ if $currentPage.IsMenuCurrent "main" . }}fw7 ba{{ end }}">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+
+  {{ partial "logo" . }}
+</div>

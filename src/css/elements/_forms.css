@@ -1,0 +1,43 @@
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  background-color: var(--white-smoke);
+  border-radius: 0.25rem;;
+  border: none;
+  box-shadow: 0 1px 1px var(--dark-gray);
+  padding: 0.40rem;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: var(--sea-buckthorn);
+  border: 0;
+  border-radius: 0.25rem;
+  color: #fff;
+  padding: 0.75rem 5rem;
+}
+[aria-disabled="true"] input[type="submit"] {
+  background-color: var(--aluminum);
+  color: var(--black-70);
+}
+
+/**
+ * Form Validation Errors
+ */
+.error {
+  box-shadow: 0 1px 1px var(--red) !important;
+}
+
+.error-message {
+  color: var(--red);
+  font-size: .75em;
+  font-style: italic;
+  margin-top: .25em;
+  margin-bottom: 1em;
+}
+
+input[type="text"]:disabled {
+  background-color: var(--aluminum);
+}

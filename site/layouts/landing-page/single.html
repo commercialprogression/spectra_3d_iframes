@@ -1,0 +1,20 @@
+<!-- Render header -->
+{{ partial "header" . }}
+
+<div id="landing-page" class="">
+
+  <!-- Render nav -->
+  {{ partial "nav" . }}
+
+  {{ .Content }}
+
+  <div class="flex flex-column flex-row-l justify-between pa2 pa0-l">
+  {{ if (.Params.copyright) }}
+    <div class="f6 mv3 mv4-l">&copy; {{ now.Format "2006"}} Dentsply Sirona | <a href="/terms/">{{ T "terms_of_use" }}</a></div>
+  {{ end }}
+  </div>
+
+  <!-- Render footer -->
+  {{ partial "footer" . }}
+
+</div>

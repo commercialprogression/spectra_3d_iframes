@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+media_folder: "site/static/img/uploads"
+public_folder: "/img/uploads"
+accept_roles:
+  - admin
+
+collections:
+  - label: "Landing Page"
+    name: "landing-page"
+    editor:
+      preview: false
+    folder: "site/content/landing-page"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "URL"
+        name: "url"
+        widget: "string"
+
+      - label: 'Body'
+        name: 'body'
+        widget: "markdown"
+
+  - label: "Slide"
+    name: "slide"
+    folder: "site/content/slide"
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+        required: false
+
+      - label: "Color"
+        name: "color"
+        widget: "select"
+        options:
+          - label: "Orange"
+            value: "#F6A800"
+          - label: "Light Gray"
+            value: "#9B9B9B"
+          - label: "Medium Gray"
+            value: "#8D8D8D"
+          - label: "Dark Gray"
+            value: "#54575A"
+          - label: "Light Blue"
+            value: "#66ACDF"
+          - label: "Dark Blue"
+            value: "#0075C9"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false

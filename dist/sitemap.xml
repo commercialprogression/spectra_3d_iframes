@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/slide/step-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/slide/step-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/slide/step-3/</loc>
+  </url>
+  
+  <url>
+    <loc>/slide/step-4/</loc>
+  </url>
+  
+  <url>
+    <loc>/slide/step-5/</loc>
+  </url>
+  
+  <url>
+    <loc>/slide/step-6/</loc>
+  </url>
+  
+  <url>
+    <loc>/landing-page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/slide/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/page1/</loc>
+  </url>
+  
+</urlset>
