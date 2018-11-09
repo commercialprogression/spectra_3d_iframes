@@ -1,6 +1,6 @@
 
 // Import our stuffs.
-import {auth} from "./app.js";
+import {auth} from "./auth.js";
 import maskInput from "vanilla-text-mask";
 import serialNumberMask from "./serialNumberMask.js";
 import validate from "../../node_modules/validate/dist/validate.polyfills.min";

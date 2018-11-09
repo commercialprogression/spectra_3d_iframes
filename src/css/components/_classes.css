@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Classes that can be leveraged site-wide.
+ */
+
+.color--inherit {
+  color: inherit;
+}
+
+.ds-blue {
+  color: #44a4e5;
+}
+
+/* The DS gradient as a bottom border. */
+.ds-border-bottom {
+  border-bottom: 5px solid #0077c8;
+  position: relative;
+}
+.ds-border-bottom:after {
+  background-color: #0077c8;
+  background-image: linear-gradient(90deg,#0077c8,rgba(91,83,88,0.5) 51%,#f6a800);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -5px;
+  content: '';
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.ent-reg {
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.mw1100 {
+  max-width: 1100px;
+}
+.mw1440 {
+  max-width: 1440px;
+}
+
+.scorpion-on-white {
+  background-color: var(--white);
+  color: var(--scorpion);
+}
+
+.site-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.site-title {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.text-decoration--none {
+  text-decoration: none;
+}
+
+.white-on-black {
+  background-color: var(--black);
+  color: var(--white);
+}

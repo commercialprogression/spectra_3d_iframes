@@ -1,5 +1,5 @@
 ---
-title: How to Care for Your Dentures
+title: "6. Facial Incisal Edge (Optional)"
 color: '#0075C9'
 list:
   heading: Cleaning Your New Dentures

@@ -1,17 +1,35 @@
 {{ partial "header" . }}
+{{ partial "nav" . }}
 
-<div class="flex flex-column justify-center items-center full-height">
+<div id="landing-page" class="mw1100 mv6 center">
+  <div class="glide">
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet tooth" data-glide-dir="=0">0</button>
+      <button class="glide__bullet" data-glide-dir="=1">1</button>
+      <button class="glide__bullet" data-glide-dir="=2">2</button>
+      <button class="glide__bullet" data-glide-dir="=3">3</button>
+      <button class="glide__bullet" data-glide-dir="=4">4</button>
+      <button class="glide__bullet" data-glide-dir="=5">5</button>
+      <button class="glide__bullet" data-glide-dir="=6">6</button>
+    </div>
 
-  <div class="rotate dib">
-    <img src="/img/loading.svg">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+      {{ range .Pages }}
+        <li class="glide__slide">
+          {{ .Content }}
+        </li>
+      {{ end }}
+      </ul>
+    </div>
+
+    <div class="glide__buttons" data-glide-el="controls">
+      <button data-glide-dir="<<">Start</button>
+      <button data-glide-dir="<">Previous</button>
+      <button data-glide-dir=">">Next</button>
+      <button data-glide-dir=">>">End</button>
+    </div>
   </div>
-
-  <div class="pt4">
-    {{ partial "logo" . }}
-  </div>
-
 </div>
-
-<script src="loading.js"></script>
 
 {{ partial "footer" . }}

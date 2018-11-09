@@ -1,0 +1,42 @@
+
+<!-- Set variables -->
+{{ $color := .Params.color }}
+
+<!-- Heading and text -->
+{{ if (.Params.list.heading) }}
+<div class="tc mw6 pb4 center pt4">
+  <div class="f2 pb3">{{ .Params.list.heading }}</div>
+  <div>{{ .Params.list.text }}</div>
+</div>
+{{ end }}
+
+{{ $.Scratch.Set "list" 1 }}
+
+<div>
+ {{ range .Params.list.listitems }}
+   {{ range . }}
+     <div class="flex items-center justify-between flex-column flex-row-l">
+       <div class="flex-1 flex pa3 pa5-l">
+         <div class="mr4">
+           <span style="background-color: {{ $color }};" class="f3 fw7 white br-100 dib w3 h3 flex items-center justify-center">
+             {{ $.Scratch.Get "list" }}
+           </span>
+         </div>
+
+         <div>{{ .text }}</div>
+
+       </div>
+
+       {{ if (.image ) }}
+       <div class="flex-1">
+         <img src="{{ .image }}" class="w-100" />
+       </div>
+       {{ end }}
+
+     </div>
+
+     <!-- Up the count -->
+     {{ $.Scratch.Add "list" 1 }}
+   {{ end }}
+ {{ end }}
+</div>

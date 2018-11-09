@@ -1,6 +1,6 @@
 
 // Imports.
-import {user} from "./app.js";
+import {user} from "./auth.js";
 
 // Check to see if we are logged in.
 if (user) {

@@ -1,6 +1,6 @@
 
 // Import our stuffs.
-import {auth} from "./app.js";
+import {auth} from "./auth.js";
 
 // Store a few elements for later.
 const form = document.getElementById("reset-form");
