@@ -1,11 +1,6 @@
-
-<!-- Set variables -->
-{{ $color := .Params.color }}
-
-<!-- Card template -->
 <div class="slide-wrapper">
-  <!-- Card teaser -->
-  <div href="#" style="background-color: {{ $color }}" class="tc pv4-l pointer relative f4 f3-m f2-l z-1 white card justify-center flex items-center ph1 ph3-m ph4-l db no-underline h-100">
-    {{ .Title | markdownify }}
+  <h2>{{ .Params.title }}</h2>
+  <div class="threed-object" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
+    (Text should be replaced with 3d object)
   </div>
 </div>

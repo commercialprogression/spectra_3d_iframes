@@ -1,7 +1,8 @@
 ---
-title: How to Care for Your Dentures
-subtitle: More text
-color: '#0075C9'
+title: "1. Class IV Preparation"
+mtl: test.mtl
+obj: test.obj
 ---
 
-Just remember, baby.
+After shade selection apply adhesive according to the respective manufactrer’s 
+instructions for use.
