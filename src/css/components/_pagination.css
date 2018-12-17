@@ -1,0 +1,34 @@
+.page-number {
+  border: 2px solid #44a4e5;
+  background-color: black;
+  position: relative;
+}
+.page-number.current-page {
+  background: url('../img/tooth-icon.png');
+  background-size: cover;
+  background-color:  #44a4e5;
+}
+.page-number.current-page a {
+  visibility: hidden;
+}
+.page-number:hover {
+  background-color: #44a4e5;
+}
+.page-number a {
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 2em;
+  text-align: center;
+}
+.pagination-connect {
+  position: absolute;
+  width: 100%;
+  top: .6em;
+  border-color: #44a4e5;
+}
+.slide-object {
+  max-width: 600px;
+}

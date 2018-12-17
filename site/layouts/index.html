@@ -2,34 +2,29 @@
 {{ partial "nav" . }}
 
 <div id="landing-page" class="mw1100 mv6 center">
-  <div class="glide">
-    <div class="glide__bullets" data-glide-el="controls[nav]">
-      <button class="glide__bullet tooth" data-glide-dir="=0">0</button>
-      <button class="glide__bullet" data-glide-dir="=1">1</button>
-      <button class="glide__bullet" data-glide-dir="=2">2</button>
-      <button class="glide__bullet" data-glide-dir="=3">3</button>
-      <button class="glide__bullet" data-glide-dir="=4">4</button>
-      <button class="glide__bullet" data-glide-dir="=5">5</button>
-      <button class="glide__bullet" data-glide-dir="=6">6</button>
-    </div>
+  <div class="container">
 
-    <div class="glide__track" data-glide-el="track">
-      <ul class="glide__slides">
-      {{ range .Pages }}
-        <li class="glide__slide">
-          {{ .Render "single" }}
+      {{ $paginator := .Paginate (where .Data.Pages "Type" "slide") }}
+      <ul class="pagination p0 relative">
+        <hr class="pagination-connect">
+        {{ range $paginator.Pagers }}
+        <li class="page-number pa3 br-100 dib w2 h2 overflow-hidden {{ if eq . $paginator }}current-page{{ end }}">
+          <a class="db white lh2 link pa1 absolute b" href="{{ .URL }}">{{ .PageNumber }}</a>
         </li>
-      {{ end }}
+        {{ end }}
       </ul>
-    </div>
+      {{ range $paginator.Pages }}
 
-    <div class="glide__buttons" data-glide-el="controls">
-      <button data-glide-dir="<<">Start</button>
-      <button data-glide-dir="<">Previous</button>
-      <button data-glide-dir=">">Next</button>
-      <button data-glide-dir=">>">End</button>
-    </div>
-  </div>
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            {{ .Render "single" }}
+          </li>
+        </ul>
+      </div>
+
+      {{ end }}
+
 </div>
 
 {{ partial "footer" . }}
