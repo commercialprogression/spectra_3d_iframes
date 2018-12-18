@@ -3,18 +3,12 @@
  * The main application.
  */
 
-import Glide from "@glidejs/glide";
 import * as THREE from 'three';
-import * as OrbitControls from 'three-orbitcontrols'
-import MTLLoader from "three-mtl-loader";
-var OBJLoader = require('three-obj-loader');
-OBJLoader(THREE);
-
-// Initiate the glide slideshow.
-//new Glide(".glide").mount();
+import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader';
+import * as OrbitControls from 'three-orbitcontrols';
 
 // Set globals for 3d rendering.
-let threeDObjects = document.querySelectorAll(".threed-object");
+let threeDObjects = document.querySelectorAll(".threed-object[data-mtl]");
 let renderers = {};
 
 /**
@@ -24,7 +18,7 @@ threeDObjects.forEach(function(tDObject, index){
   let threes = {};
 
   // Camera.
-  threes.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+  threes.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 300);
   threes.camera.position.z = 3;
 
   // Scene.
@@ -45,7 +39,7 @@ threeDObjects.forEach(function(tDObject, index){
   mtlLoader.load(tDObject.dataset.mtl, function (materials) {
     materials.preload();
 
-    var objLoader = new THREE.OBJLoader();
+    var objLoader = new OBJLoader();
     objLoader.setMaterials(materials);
     objLoader.setPath('3d/');
     objLoader.load(tDObject.dataset.obj, function (object) {
@@ -56,24 +50,25 @@ threeDObjects.forEach(function(tDObject, index){
   // Create a renderer.
   threes.renderer = new THREE.WebGLRenderer();
   threes.renderer.setPixelRatio(window.devicePixelRatio);
-  threes.renderer.setSize(window.innerWidth, window.innerHeight);
-  threes.renderer.setClearColor(new THREE.Color("hsl(0, 0%, 10%)"));
+  threes.renderer.setSize(600, 600);
+  threes.renderer.setClearColor(new THREE.Color("#000000"));
 
   // Controls.
   threes.controls = new THREE.OrbitControls(threes.camera, threes.renderer.domElement);
   threes.controls.enableDamping = true;
   threes.controls.dampingFactor = 0.25;
-  threes.controls.enableZoom = false;
+  threes.controls.enableZoom = true;
 
-  // Events.
-  //window.addEventListener('resize', onWindowResize, false);
-  //window.addEventListener('keydown', onKeyboardEvent, false);
+  // Event
+  window.addEventListener('resize', onWindowResize, false);
+  window.addEventListener('keydown', onKeyboardEvent, false);
 
   // Store the three.js generator in the DOM Node for later if needed.
   tDObject.three = threes;
   renderers[index] = threes;
 
   // Replace the text with the rendering.
+  tDObject.innerHTML = '';
   tDObject.appendChild(tDObject.three.renderer.domElement);
   tDObject.three.controls.update();
   tDObject.three.renderer.render(tDObject.three.scene, tDObject.three.camera);
@@ -81,27 +76,32 @@ threeDObjects.forEach(function(tDObject, index){
 
 
 function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  Object.keys(renderers).forEach(function(key) {
+    var thisRend = renderers[key];
+    thisRend.camera.aspect = window.innerWidth / window.innerHeight;
+    thisRend.camera.updateProjectionMatrix();
+    thisRend.renderer.setSize(window.innerWidth, window.innerHeight);
+  });
 }
 
 function onKeyboardEvent(e) {
   if (e.code === 'KeyL') {
-    //lighting = !lighting;
-
-    if (lighting) {
-      ambient.intensity = 0.25;
-      scene.add(keyLight);
-      scene.add(fillLight);
-      scene.add(backLight);
-    }
-    else {
-      ambient.intensity = 1.0;
-      scene.remove(keyLight);
-      scene.remove(fillLight);
-      scene.remove(backLight);
-    }
+    // Mess with lighting.
+    Object.keys(renderers).forEach(function(key) {
+      var thisRend = renderers[key];
+      if (thisRend.lighting) {
+        thisRend.ambient.intensity = 0.25;
+        thisRend.scene.add(thisRend.keyLight);
+        thisRend.scene.add(thisRend.fillLight);
+        thisRend.scene.add(thisRend.backLight);
+      }
+      else {
+        thisRend.ambient.intensity = 1.0;
+        thisRend.scene.remove(thisRend.keyLight);
+        thisRend.scene.remove(thisRend.fillLight);
+        thisRend.scene.remove(thisRend.backLight);
+      }
+    });
   }
 }
 

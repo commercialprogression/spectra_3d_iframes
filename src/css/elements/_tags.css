@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Tag-level tweaks.
+ */
+
+/**
+ * Make canvas elements responsive, too.
+ */
+canvas {
+  display: block;
+  height: auto !important;
+  max-width: 100%;
+}
+.threed-object canvas {
+  display: block;
+}

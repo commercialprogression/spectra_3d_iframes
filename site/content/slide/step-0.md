@@ -1,7 +1,6 @@
 ---
 title: "1. Class IV Preparation"
-mtl: test.mtl
-obj: test.obj
+placeholder: slide-0-placeholder.png
 next: "slide/2"
 ---
 
