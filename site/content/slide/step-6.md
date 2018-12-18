@@ -4,9 +4,8 @@ title: "1. Class IV Preparation"
 #obj: 01_spectra3d.obj
 mtl: test.mtl
 obj: test.obj
-placeholder: slide-1-placeholder.png
-prev: "/"
-next: "slide/3"
+placeholder: slide-6-placeholder.png
+prev: "slide/6"
 legend:
   - text: "Natural tooth"
     color: "overcast"
