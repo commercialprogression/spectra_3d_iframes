@@ -3,15 +3,9 @@
  * The main application.
  */
 
-import Glide from "@glidejs/glide";
 import * as THREE from 'three';
-import * as OrbitControls from 'three-orbitcontrols'
-import MTLLoader from "three-mtl-loader";
-var OBJLoader = require('three-obj-loader');
-OBJLoader(THREE);
-
-// Initiate the glide slideshow.
-//new Glide(".glide").mount();
+import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader';
+import * as OrbitControls from 'three-orbitcontrols';
 
 // Set globals for 3d rendering.
 let threeDObjects = document.querySelectorAll(".threed-object");
@@ -24,7 +18,7 @@ threeDObjects.forEach(function(tDObject, index){
   let threes = {};
 
   // Camera.
-  threes.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
+  threes.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 300);
   threes.camera.position.z = 3;
 
   // Scene.
@@ -45,7 +39,7 @@ threeDObjects.forEach(function(tDObject, index){
   mtlLoader.load(tDObject.dataset.mtl, function (materials) {
     materials.preload();
 
-    var objLoader = new THREE.OBJLoader();
+    var objLoader = new OBJLoader();
     objLoader.setMaterials(materials);
     objLoader.setPath('3d/');
     objLoader.load(tDObject.dataset.obj, function (object) {
@@ -56,7 +50,7 @@ threeDObjects.forEach(function(tDObject, index){
   // Create a renderer.
   threes.renderer = new THREE.WebGLRenderer();
   threes.renderer.setPixelRatio(window.devicePixelRatio);
-  threes.renderer.setSize(window.innerWidth, window.innerHeight);
+  threes.renderer.setSize(300, 300);
   threes.renderer.setClearColor(new THREE.Color("hsl(0, 0%, 10%)"));
 
   // Controls.

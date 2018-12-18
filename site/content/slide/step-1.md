@@ -4,5 +4,5 @@ mtl: 01_spectra3d.mtl
 obj: 01_spectra3d.obj
 ---
 
-After shade selection apply adhesive according to the respective manufactrer’s 
+After shade selection apply adhesive according to the respective manufacturer’s 
 instructions for use.
