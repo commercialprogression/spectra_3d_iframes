@@ -29,6 +29,6 @@
   top: .6em;
   border-color: #44a4e5;
 }
-.slide-object {
-  max-width: 600px;
+.pagination {
+  width: 50%;
 }

@@ -4,8 +4,22 @@
     <p>{{ .Params.text }}</p>
     <div class="legend">
     </div>
+    <div class="prev-next flex">
+      {{ if (.Params.prev) and (.Params.next) }}
+      <a href="{{ .Params.prev }}" class="button">Previous</a>
+      <a href="{{ .Params.next }}" class="button btn-orange">Next</a>
+      {{ else if (.Params.prev) }}
+      <a href="{{ .Params.prev }}" class="button">Previous</a>
+      <a href="/" class="button btn-orange">Start Over</a>
+      {{ else if (.Params.next) }}
+      <a href="{{ .Params.next }}" class="button btn-orange">Get Started</a>
+      {{ end }}
+
+
+    </div>
   </div>
-  <div class="mw-100 slide-object threed-object" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
+  <div class="slide-object threed-object overflow-hidden" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
     (Text should be replaced with 3d object)
   </div>
+
 </div>

@@ -5,7 +5,7 @@
   <div class="container">
 
       {{ $paginator := .Paginate (where .Data.Pages "Type" "slide") }}
-      <ul class="pagination p0 relative">
+      <ul class="pagination pa0 relative">
         <hr class="pagination-connect">
         {{ range $paginator.Pagers }}
         <li class="page-number pa3 br-100 dib w2 h2 overflow-hidden {{ if eq . $paginator }}current-page{{ end }}">
