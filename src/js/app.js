@@ -50,7 +50,7 @@ threeDObjects.forEach(function(tDObject, index){
   // Create a renderer.
   threes.renderer = new THREE.WebGLRenderer();
   threes.renderer.setPixelRatio(window.devicePixelRatio);
-  threes.renderer.setSize(600, 600);
+  threes.renderer.setSize(window.innerWidth, window.innerHeight);
   threes.renderer.setClearColor(new THREE.Color("#000000"));
 
   // Controls.
