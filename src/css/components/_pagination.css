@@ -3,15 +3,17 @@
   background-color: black;
   position: relative;
 }
-.page-number.current-page {
-  background: url('../img/tooth-icon.png');
-  background-size: cover;
-  background-color:  #44a4e5;
+.page-number:nth-child(2) {
+  background: url('../img/tooth-icon.png') black;
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: 9px 2px;
 }
-.page-number.current-page a {
+.page-number:nth-child(2) a span {
   visibility: hidden;
 }
-.page-number:hover {
+.page-number:hover,
+.page-number.current-page {
   background-color: #44a4e5;
 }
 .page-number a {

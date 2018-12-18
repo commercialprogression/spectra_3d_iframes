@@ -9,7 +9,7 @@
         <hr class="pagination-connect">
         {{ range $paginator.Pagers }}
         <li class="page-number pa3 br-100 dib w2 h2 overflow-hidden {{ if eq . $paginator }}current-page{{ end }}">
-          <a class="db white lh2 link pa1 absolute b" href="{{ .URL }}">{{ .PageNumber }}</a>
+          <a class="db white lh2 link pa1 absolute b" href="{{ .URL }}"><span>{{ sub .PageNumber 1 }}</span></a>
         </li>
         {{ end }}
       </ul>

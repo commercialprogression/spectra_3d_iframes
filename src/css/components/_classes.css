@@ -11,6 +11,42 @@
   color: #44a4e5;
 }
 
+.dusty-gold {
+  color: #cbb37f;
+}
+.salmon {
+  color: #f7a087;
+}
+.seafoam {
+  color: #65c7c3;
+}
+.overcast {
+  color: #e5e5e5;
+}
+.legend-color.dusty-gold {
+  background-color: #cbb37f;
+}
+.legend-color.salmon {
+  background-color: #f7a087;
+}
+.legend-color.seafoam {
+  background-color: #65c7c3;
+}
+.legend-color.overcast {
+  background-color: #e5e5e5;
+}
+.legend-color {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.legend-item p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* The DS gradient as a bottom border. */
 .ds-border-bottom {
   border-bottom: 5px solid #0077c8;
