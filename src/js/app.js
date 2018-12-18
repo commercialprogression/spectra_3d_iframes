@@ -57,7 +57,7 @@ threeDObjects.forEach(function(tDObject, index){
   threes.controls = new THREE.OrbitControls(threes.camera, threes.renderer.domElement);
   threes.controls.enableDamping = true;
   threes.controls.dampingFactor = 0.25;
-  threes.controls.enableZoom = false;
+  threes.controls.enableZoom = true;
 
   // Events.
   //window.addEventListener('resize', onWindowResize, false);
