@@ -8,7 +8,7 @@ import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader';
 import * as OrbitControls from 'three-orbitcontrols';
 
 // Set globals for 3d rendering.
-let threeDObjects = document.querySelectorAll(".threed-object");
+let threeDObjects = document.querySelectorAll(".threed-object[data-mtl]");
 let renderers = {};
 
 /**
@@ -50,8 +50,8 @@ threeDObjects.forEach(function(tDObject, index){
   // Create a renderer.
   threes.renderer = new THREE.WebGLRenderer();
   threes.renderer.setPixelRatio(window.devicePixelRatio);
-  threes.renderer.setSize(300, 300);
-  threes.renderer.setClearColor(new THREE.Color("hsl(0, 0%, 10%)"));
+  threes.renderer.setSize(600, 600);
+  threes.renderer.setClearColor(new THREE.Color("#000000"));
 
   // Controls.
   threes.controls = new THREE.OrbitControls(threes.camera, threes.renderer.domElement);
@@ -68,6 +68,7 @@ threeDObjects.forEach(function(tDObject, index){
   renderers[index] = threes;
 
   // Replace the text with the rendering.
+  tDObject.innerHTML = '';
   tDObject.appendChild(tDObject.three.renderer.domElement);
   tDObject.three.controls.update();
   tDObject.three.renderer.render(tDObject.three.scene, tDObject.three.camera);

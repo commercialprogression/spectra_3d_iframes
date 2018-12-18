@@ -14,12 +14,16 @@
       {{ else if (.Params.next) }}
       <a href="{{ .Params.next }}" class="button btn-orange">Get Started</a>
       {{ end }}
-
-
     </div>
   </div>
-  <div class="slide-object threed-object overflow-hidden" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
-    (Text should be replaced with 3d object)
-  </div>
 
+  {{ if (.Params.obj) }}
+    <div class="slide-object threed-object overflow-hidden" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
+      <img src="/img/{{ .Params.placeholder }}" alt="" />
+    </div>
+  {{ else }}
+    <div class="slide-object threed-object overflow-hidden">
+      <img src="/img/{{ .Params.placeholder }}" alt="" />
+    </div>
+  {{ end }}
 </div>
