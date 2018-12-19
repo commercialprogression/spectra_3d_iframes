@@ -5,6 +5,7 @@ title: "1. Class IV Preparation"
 mtl: test.mtl
 obj: test.obj
 placeholder: slide-1-placeholder.png
+weight: 2
 prev: "/"
 next: "slide/3"
 legend:

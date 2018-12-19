@@ -39,6 +39,11 @@ collections:
         widget: "string"
         required: false
 
+      - label: "Order"
+        name: "order"
+        widget: number
+        required: false
+
       - label: "Color"
         name: "color"
         widget: "select"

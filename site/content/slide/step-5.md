@@ -5,8 +5,9 @@ title: "5. Facial Surface Restoration"
 mtl: test.mtl
 obj: test.obj
 placeholder: slide-5-placeholder.png
-prev: "slide/5"
-next: "slide/7"
+weight: 6
+prev: "slide/4"
+next: "slide/6"
 legend:
   - text: "Opaque dentin shade"
     color: "dusty-gold"

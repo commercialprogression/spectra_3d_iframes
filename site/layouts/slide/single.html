@@ -1,24 +1,13 @@
 <div class="slide-wrapper flex flex-row">
   <div class="slide-text w-100">
     <h2>{{ .Params.title }}</h2>
-    <p>{{ .Summary | markdownify }}</p>
+    <p>{{ .Summary | safeHTML }}</p>
     <div class="legend">
       {{ range .Params.legend }}
       <div class="legend-item">
         <div class="legend-color {{ .color }}"></div>
         <p>{{ .text }}</p>
       </div>
-      {{ end }}
-    </div>
-    <div class="prev-next flex">
-      {{ if (.Params.prev) and (.Params.next) }}
-      <a href="{{ .Params.prev }}" class="button">Previous</a>
-      <a href="{{ .Params.next }}" class="button btn-orange">Next</a>
-      {{ else if (.Params.prev) }}
-      <a href="{{ .Params.prev }}" class="button">Previous</a>
-      <a href="/" class="button btn-orange">Start Over</a>
-      {{ else if (.Params.next) }}
-      <a href="{{ .Params.next }}" class="button btn-orange">Get Started</a>
       {{ end }}
     </div>
   </div>

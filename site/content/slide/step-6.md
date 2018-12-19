@@ -1,17 +1,19 @@
 ---
-title: "1. Class IV Preparation"
+title: "6. Facial Incisal Edge (Optional)"
 #mtl: 01_spectra3d.mtl
 #obj: 01_spectra3d.obj
 mtl: test.mtl
 obj: test.obj
 placeholder: slide-6-placeholder.png
-prev: "slide/6"
+weight: 7
+prev: "slide/5"
 legend:
+  - text: "Opaque dentin shade"
+    color: "dusty-gold"
+  - text: "Universal CLOUD shade"
+    color: "salmon"
   - text: "Natural tooth"
     color: "overcast"
-  - text: "Dentin"
-    color: "salmon"
 ---
 
-After shade selection apply adhesive according to the respective manufactrer’s
-<span class="seafoam">instructions</span> for use.
+For a highly translucent incisal edge, use the translucent enamel shade on the incisal-third of the  facial (vestibular) area.

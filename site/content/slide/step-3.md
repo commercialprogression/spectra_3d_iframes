@@ -5,6 +5,7 @@ title: "3. Palatal (lingual) Incisal-Third Restoration"
 mtl: test.mtl
 obj: test.obj
 placeholder: slide-3-placeholder.png
+weight: 4
 prev: "slide/3"
 next: "slide/5"
 legend:

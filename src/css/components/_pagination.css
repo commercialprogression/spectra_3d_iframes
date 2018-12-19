@@ -28,10 +28,29 @@
 }
 .pagination-connect {
   position: absolute;
-  width: 100%;
+  max-width: 380px;
+  width: 98%;
   top: .6em;
   border-color: #44a4e5;
 }
 .pagination {
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  max-width: 400px;
+}
+
+.prev-next {
+  max-width: 600px;
+}
+@media all and (max-width: 750px){
+  .pagination {
+    flex-wrap: wrap;
+  }
+  .pagination-connect {
+    display: none;
+  }
+  .slide-wrapper {
+    flex-direction: column;
+  }
 }

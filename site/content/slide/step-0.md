@@ -1,8 +1,9 @@
 ---
-title: "1. Class IV Preparation"
+title: "TPH Spectra® ST + TPH Spectra® ST Effects Simplified Layering Technique Interactive Demo"
 placeholder: slide-0-placeholder.png
+order: 0
+weight: 1
 next: "slide/2"
 ---
 
-After shade selection apply adhesive according to the respective manufactrer’s
-instructions for use.
+For esthetically demanding anterior cases, TPH Spectra® ST Effects Composite works with TPH Spectra® ST Composite in a simplified layering technique.

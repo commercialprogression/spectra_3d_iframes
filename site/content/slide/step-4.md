@@ -5,6 +5,7 @@ title: "4. Proximal Wall Restoration"
 mtl: test.mtl
 obj: test.obj
 placeholder: slide-4-placeholder.png
+weight: 5
 prev: "slide/4"
 next: "slide/6"
 legend:
