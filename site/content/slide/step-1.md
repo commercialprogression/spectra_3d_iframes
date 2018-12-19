@@ -11,9 +11,8 @@ next: "slide/3"
 legend:
   - text: "Natural tooth"
     color: "overcast"
-  - text: "Dentin"
-    color: "salmon"
 ---
 
 After shade selection apply adhesive according to the respective manufactrer’s
 <span class="seafoam">instructions</span> for use.
+<!--more-->

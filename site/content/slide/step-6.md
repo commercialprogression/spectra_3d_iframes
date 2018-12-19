@@ -12,8 +12,11 @@ legend:
     color: "dusty-gold"
   - text: "Universal CLOUD shade"
     color: "salmon"
+  - text: "Translucent enamel shade"
+    color: "seafoam"
   - text: "Natural tooth"
     color: "overcast"
 ---
 
-For a highly translucent incisal edge, use the translucent enamel shade on the incisal-third of the  facial (vestibular) area.
+For a highly translucent incisal edge, use the {{< text-color color="seafoam" >}}translucent enamel shade{{< /text-color >}} on the incisal-third of the  facial (vestibular) area.
+<!--more-->

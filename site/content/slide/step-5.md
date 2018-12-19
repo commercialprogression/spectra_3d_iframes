@@ -18,3 +18,4 @@ legend:
 ---
 
 Complete facial (vestibular) portion of tooth thickness with <span class="salmon">universal CLOUD shade.</span> for use.
+<!--more-->

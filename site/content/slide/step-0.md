@@ -7,3 +7,4 @@ next: "slide/2"
 ---
 
 For esthetically demanding anterior cases, TPH Spectra® ST Effects Composite works with TPH Spectra® ST Composite in a simplified layering technique.
+<!--more-->

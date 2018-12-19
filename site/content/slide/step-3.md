@@ -17,4 +17,5 @@ legend:
     color: "overcast"
 ---
 
-Before curing the previous increment, complete palatal (lingual) wall by placing <span class="salmon">universal CLOUD shade</span> at incisal third of the tooth.
+Before curing the previous increment, complete palatal (lingual) wall by placing {{< text-color color="salmon" >}}universal CLOUD shade{{< /text-color >}} at incisal third of the tooth.
+<!--more-->

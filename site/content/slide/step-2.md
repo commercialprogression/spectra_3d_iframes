@@ -9,10 +9,11 @@ weight: 3
 prev: "slide/2"
 next: "slide/4"
 legend:
+  - text: "Opaque dentin shade"
+    color: "dusty-gold"
   - text: "Natural tooth"
     color: "overcast"
-  - text: "Dentin"
-    color: "salmon"
 ---
 
-Restore palatal (lingual) 1/2 of tooth thickness with <span class="dusty-gold">opaque dentin shade</span> to recreate dentin core. Leave space for the <span class="salmon">universal CLOUD shade</span> at the incisal third.
+Restore palatal (lingual) 1/2 of tooth thickness with {{< text-color color="dusty-gold" >}}opaque dentin shade{{< /text-color >}} to recreate dentin core. Leave space for the <span class="salmon">universal CLOUD shade</span> at the incisal third.
+<!--more-->

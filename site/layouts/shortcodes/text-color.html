@@ -1,0 +1,8 @@
+<!-- reset scratch variables at the start -->
+{{ $.Scratch.Set "textcolor" false }}
+
+{{ if .IsNamedParams }}
+  {{ $.Scratch.Set "textcolor" (.Get "color") }}
+{{ end }}
+
+<span class="{{ $.Scratch.Get "textcolor" }}">{{ .Inner | markdownify }}</span>
