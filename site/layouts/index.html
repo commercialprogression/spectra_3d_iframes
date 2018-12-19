@@ -3,7 +3,6 @@
 
 <div id="landing-page" class="mw1100 mv6 center">
   <div class="container">
-
       {{ $paginator := .Paginate (where .Data.Pages "Type" "slide").ByWeight }}
       <ul class="pagination pa0 relative">
         <hr class="pagination-connect">
@@ -22,13 +21,13 @@
       {{ end }}
       <div class="prev-next flex">
         {{ if $paginator.HasPrev }}
-          <a href="{{ $paginator.Prev.URL }}" class="button">Previous</a>
+          <a href="{{ $paginator.Prev.URL }}" class="gotham button">Previous</a>
         {{ end }}
         {{ if $paginator.HasNext }}
-          <a href="{{ $paginator.Next.URL }}" class="button btn-orange">{{ if eq $paginator.PageNumber 1 }}Get Started{{ else }}Next{{ end }}</a>
+          <a href="{{ $paginator.Next.URL }}" class="gotham button btn-orange">{{ if eq $paginator.PageNumber 1 }}Get Started{{ else }}Next{{ end }}</a>
         {{ end }}
         {{ if eq $paginator.PageNumber 7 }}
-          <a href="/" class="button btn-orange">Start Over</a>
+          <a href="/" class="gotham button btn-orange">Start Over</a>
         {{ end }}
       </div>
 

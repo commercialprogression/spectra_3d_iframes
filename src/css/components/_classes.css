@@ -5,6 +5,7 @@
 .container {
   margin-left: 1rem;
   margin-right: 1rem;
+  position: relative;
 }
 .color--inherit {
   color: inherit;

@@ -1,13 +1,13 @@
 <div class="slide-wrapper flex flex-row">
   <div class="slide-text w-100">
-    <h2>{{ .Params.title }}</h2>
-    <h3 class="ds-blue">{{ .Params.subtitle }}</h3>
+    <h2 class="gotham">{{ .Params.title }}</h2>
+    <h3 class="gotham ds-blue">{{ .Params.subtitle }}</h3>
     <p>{{ .Summary | safeHTML }}</p>
     <div class="legend">
       {{ range .Params.legend }}
       <div class="legend-item">
         <div class="legend-color {{ .color }}"></div>
-        <p>{{ .text }}</p>
+        <p class="gotham">{{ .text }}</p>
       </div>
       {{ end }}
     </div>

@@ -36,3 +36,8 @@
 .btn-orange {
   border-color: #f8a700;
 }
+.instructions {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
