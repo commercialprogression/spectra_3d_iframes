@@ -6,6 +6,16 @@
 .slide-text {
   font-family: "Gotham Book", Arial;
   padding-top: 120px;
+  padding-bottom: 80px;
+}
+.slide-text h2 {
+  margin-bottom: 0px;
+  font-weight: normal;
+}
+.slide-text h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-top: 0px;
 }
 .slide-text p {
   font-size: 15px;

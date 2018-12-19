@@ -1,5 +1,6 @@
 ---
-title: "TPH Spectra® ST + TPH Spectra® ST Effects Simplified Layering Technique Interactive Demo"
+title: "TPH Spectra® ST + TPH Spectra® ST Effects"
+subtitle: "Simplified Layering Technique Interactive Demo"
 placeholder: slide-0-placeholder.png
 order: 0
 weight: 1
