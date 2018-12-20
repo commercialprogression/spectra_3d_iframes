@@ -38,3 +38,17 @@
   top: 50px;
   right: 50px;
 }
+.model-close.full-screen {
+  display: block;
+  text-align: right;
+}
+.slide-model.full-screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}

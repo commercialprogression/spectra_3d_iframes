@@ -12,14 +12,21 @@
       {{ end }}
     </div>
   </div>
-
-  {{ if (.Params.obj) }}
-    <div class="slide-object threed-object overflow-hidden" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
-      <img src="/img/{{ .Params.placeholder }}" alt="" />
+  <div id="model" class="slide-model">
+    {{ if (.Params.obj) }}
+      <div class="dn model-close" id="modelclose">
+        <img src="/img/close-out.png" />
+      </div>
+      <div class="slide-object threed-object tc" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
+        <img src="/img/{{ .Params.placeholder }}" alt="" />
+      </div>
+    {{ else }}
+      <div id="model" class="slide-object threed-object">
+        <img src="/img/{{ .Params.placeholder }}" alt="" />
+      </div>
+    {{ end }}
+    <div id="full-screen-button" class="tc pv3">
+      <img src="/img/full-screen-button.png" />
     </div>
-  {{ else }}
-    <div class="slide-object threed-object overflow-hidden">
-      <img src="/img/{{ .Params.placeholder }}" alt="" />
-    </div>
-  {{ end }}
+  </div>
 </div>
