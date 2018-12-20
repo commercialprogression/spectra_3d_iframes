@@ -20,13 +20,13 @@
       <div class="slide-object threed-object tc" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
         <img src="/img/{{ .Params.placeholder }}" alt="" />
       </div>
+      <div id="full-screen-button" class="full-screen-button tc pv3">
+        <a class="button gotham">View Full Screen</a>
+      </div>
     {{ else }}
       <div id="model" class="slide-object threed-object">
         <img src="/img/{{ .Params.placeholder }}" alt="" />
       </div>
     {{ end }}
-    <div id="full-screen-button" class="full-screen-button tc pv3">
-      <a class="button gotham">View Full Screen</a>
-    </div>
   </div>
 </div>
