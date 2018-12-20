@@ -13,6 +13,6 @@ legend:
     color: "overcast"
 ---
 
-After shade selection apply adhesive according to the respective manufactrer’s
+After shade selection apply adhesive according to the respective manufacturer's
 <span class="seafoam">instructions</span> for use.
 <!--more-->

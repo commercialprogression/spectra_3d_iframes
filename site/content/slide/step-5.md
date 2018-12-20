@@ -17,5 +17,5 @@ legend:
     color: "overcast"
 ---
 
-Complete facial (vestibular) portion of tooth thickness with <span class="salmon">universal CLOUD shade.</span> for use.
+Complete facial (vestibular) portion of tooth thickness with <span class="salmon">universal CLOUD shade.</span>
 <!--more-->
