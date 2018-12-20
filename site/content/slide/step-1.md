@@ -14,5 +14,5 @@ legend:
 ---
 
 After shade selection apply adhesive according to the respective manufacturer's
-<span class="seafoam">instructions</span> for use.
+instructions for use.
 <!--more-->
