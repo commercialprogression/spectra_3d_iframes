@@ -1,8 +1,8 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
 
-<div id="landing-page" class="mw1100 mv6 center">
-  <div class="container">
+<div id="landing-page" class="mw1440 center container ph2">
+  <div class="mw1100 center mv6">
       {{ $paginator := .Paginate (where .Data.Pages "Type" "slide").ByWeight }}
       <ul class="pagination pa0 relative">
         <hr class="pagination-connect">
@@ -14,7 +14,7 @@
       </ul>
       {{ range (.Paginator 1).Pages }}
         {{ if eq $paginator.PageNumber 2 }}
-        <div id="instruct-overlay" class="instructions full-width">
+        <div id="instruct-overlay" class="instructions full-width mt6">
           <img src="img/Instructions.png" />
           <div class="close-out absolute">
             <div id="closeout">

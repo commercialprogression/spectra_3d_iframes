@@ -3,9 +3,8 @@
  * Classes that can be leveraged site-wide.
  */
 .container {
-  margin-left: 1rem;
-  margin-right: 1rem;
   position: relative;
+  overflow: hidden;
 }
 .color--inherit {
   color: inherit;

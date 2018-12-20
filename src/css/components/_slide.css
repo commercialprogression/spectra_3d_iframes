@@ -33,7 +33,7 @@
 .instructions::before {
   content: '';
   background-color: #000;
-  position: fixed;
+  position: absolute;
 	width: 100%;
 	height: 100%;
 }
@@ -45,6 +45,7 @@
 .close-out {
   top: 50px;
   right: 50px;
+  max-width: 10%;
 }
 .model-close.full-screen {
   display: block;
@@ -60,11 +61,6 @@
   height: 100%;
   background-color: #000;
 }
-.full-screen .full-screen-button {
-  display: none;
-}
-.full-screen-button .button:hover {
-  background-color: #44a4e5;
-  transition: all .25s;
-  cursor: pointer;
+.slide-model.full-screen img {
+  padding: 1rem;
 }
