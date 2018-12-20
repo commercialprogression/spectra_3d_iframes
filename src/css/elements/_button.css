@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  border: 1px solid #9b9b9b;
+  width: 160px;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Gotham Bold", Arial;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+.btn-orange {
+  border-color: #f8a700;
+}
+.btn-blue {
+  border-color: #44a4e5;
+}
+.btn-2x {
+  max-width: 350px;
+  width: 100%;
+}

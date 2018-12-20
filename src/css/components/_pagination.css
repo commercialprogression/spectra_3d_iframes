@@ -42,7 +42,9 @@
 }
 
 .prev-next {
-  max-width: 600px;
+  max-width: 350px;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
 @media all and (max-width: 750px){
   .pagination {

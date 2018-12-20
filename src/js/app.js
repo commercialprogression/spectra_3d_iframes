@@ -74,6 +74,9 @@ threeDObjects.forEach(function(tDObject, index){
   tDObject.three.renderer.render(tDObject.three.scene, tDObject.three.camera);
 });
 
+function hide(id) {
+  console.log("do stuff");
+}
 
 function onWindowResize() {
   Object.keys(renderers).forEach(function(key) {

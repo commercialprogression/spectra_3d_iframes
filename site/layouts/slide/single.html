@@ -1,7 +1,7 @@
 <div class="slide-wrapper flex flex-row">
   <div class="slide-text w-100">
-    <h2 class="gotham">{{ .Params.title }}</h2>
-    <h3 class="gotham ds-blue">{{ .Params.subtitle }}</h3>
+    <h2 class="gotham ds-blue">{{ .Params.title }}</h2>
+    <h3 class="gotham">{{ .Params.subtitle }}</h3>
     <p>{{ .Summary | safeHTML }}</p>
     <div class="legend">
       {{ range .Params.legend }}

@@ -13,6 +13,16 @@
         {{ end }}
       </ul>
       {{ range (.Paginator 1).Pages }}
+        {{ if eq $paginator.PageNumber 2 }}
+        <div id="instruct-overlay" class="instructions full-width">
+          <img src="img/Instructions.png" />
+          <div class="close-out absolute">
+            <div href="" onclick="hide('instruct-overlay');">
+              <img src="img/close-out.png" />
+            </div>
+          </div>
+        </div>
+        {{ end }}
 
       <div>
         {{ .Render "single"  }}
@@ -30,6 +40,9 @@
           <a href="/" class="gotham button btn-orange">Start Over</a>
         {{ end }}
       </div>
+      {{ if eq $paginator.PageNumber 7 }}
+      <a href="#" class="gotham button btn-2x btn-blue w-100">Learn more about TPH Spectra ST Composites</a>
+      {{ end }}
 
 </div>
 
