@@ -1,7 +1,7 @@
 ---
 title: "1. Class IV Preparation"
-mtl: TPH_ST_Effects_Teeth_3d_1.mtl
-obj: TPH_ST_Effects_Teeth_3d_1.obj
+#mtl: TPH_ST_Effects_Teeth_3d_1.mtl
+#obj: TPH_ST_Effects_Teeth_3d_1.obj
 placeholder: slide-1-placeholder.png
 weight: 2
 prev: "/"

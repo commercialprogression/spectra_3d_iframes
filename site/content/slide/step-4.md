@@ -1,7 +1,7 @@
 ---
 title: "4. Proximal Wall Restoration"
-mtl: TPH_ST_Effects_Teeth_3d_4.mtl
-obj: TPH_ST_Effects_Teeth_3d_4.obj
+#mtl: TPH_ST_Effects_Teeth_3d_4.mtl
+#obj: TPH_ST_Effects_Teeth_3d_4.obj
 placeholder: slide-4-placeholder.png
 weight: 5
 prev: "slide/4"
