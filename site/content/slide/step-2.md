@@ -1,9 +1,7 @@
 ---
 title: "2. Dentin Core Restoration"
-#mtl: 01_spectra3d.mtl
-#obj: 01_spectra3d.obj
-mtl: test.mtl
-obj: test.obj
+#mtl: TPH_ST_Effects_Teeth_3d_2.mtl
+#obj: TPH_ST_Effects_Teeth_3d_2.obj
 placeholder: slide-2-placeholder.png
 weight: 3
 prev: "slide/2"

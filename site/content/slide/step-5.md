@@ -1,9 +1,7 @@
 ---
 title: "5. Facial Surface Restoration"
-#mtl: 01_spectra3d.mtl
-#obj: 01_spectra3d.obj
-mtl: test.mtl
-obj: test.obj
+#mtl: TPH_ST_Effects_Teeth_3d_5.mtl
+#obj: TPH_ST_Effects_Teeth_3d_5.obj
 placeholder: slide-5-placeholder.png
 weight: 6
 prev: "slide/4"
