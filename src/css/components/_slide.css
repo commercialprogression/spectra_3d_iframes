@@ -65,3 +65,9 @@
 .slide-model .full-screen img {
   padding: 1rem;
 }
+
+@media all and (min-width: 1200px) {
+  .slide-model {
+    max-width: 650px;
+  }
+}
