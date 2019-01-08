@@ -70,4 +70,7 @@
   .slide-model {
     max-width: 650px;
   }
+  .slide-model.full-screen {
+    max-width: none;
+  }
 }
