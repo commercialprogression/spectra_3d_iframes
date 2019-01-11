@@ -27,10 +27,10 @@ threeDObjects.forEach(function(tDObject, index){
   threes.ambient = new THREE.AmbientLight(0xffffff, 0.75);
   threes.scene.add(threes.ambient);
   threes.keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(30, 100%, 75%)'), 0.35);
-  threes.keyLight.position.set(-100, 0, 100);
+  threes.keyLight.position.set(-100, 100, 100).normalize();
   threes.scene.add(threes.keyLight);
   threes.fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240, 100%, 75%)'), 0.25);
-  threes.fillLight.position.set(100, 0, 100);
+  threes.fillLight.position.set(100, -25, 100).normalize();
   threes.scene.add(threes.fillLight);
   threes.backLight = new THREE.DirectionalLight(0xffffff, 0.25);
   threes.backLight.position.set(100, 0, -100).normalize();
