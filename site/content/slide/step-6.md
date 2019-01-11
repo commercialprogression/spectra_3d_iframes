@@ -1,9 +1,7 @@
 ---
 title: "6. Facial Incisal Edge (Optional)"
-#mtl: TPH_ST_Effects_Teeth_3d_6.mtl
-#obj: TPH_ST_Effects_Teeth_3d_6.obj
-mtl: test.mtl
-obj: test.obj
+mtl: TPH_ST_Effects_Teeth_3d_6.mtl
+obj: TPH_ST_Effects_Teeth_3d_6.obj
 placeholder: slide-6-placeholder.png
 weight: 7
 prev: "slide/5"

@@ -38,6 +38,9 @@ threeDObjects.forEach(function(tDObject, index){
   mtlLoader.setPath('3d/');
   mtlLoader.load(tDObject.dataset.mtl, function (materials) {
     materials.preload();
+    console.log(materials);
+    //materials.materials.default.map.magFilter = THREE.NearestFilter;
+    //materials.materials.default.map.minFilter = THREE.LinearFilter;
 
     var objLoader = new OBJLoader();
     objLoader.setMaterials(materials);
