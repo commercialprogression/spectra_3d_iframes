@@ -72,7 +72,12 @@
 
 .ent-reg {
   font-size: 11px;
-  vertical-align: middle;
+  vertical-align: top;
+}
+a .ent-reg {
+  display: inline-block;
+  border-bottom: 1px solid #44a4e5;
+  padding-bottom: 3px;
 }
 .super {
   font-size: 11px;
@@ -108,4 +113,17 @@
 .white-on-black {
   background-color: var(--black);
   color: var(--white);
+}
+
+@media all and (max-width: 700px) {
+  .pb-s {
+    padding-bottom: 1rem;
+  }
+  .tc-s {
+    text-align: center;
+  }
+  .center-s {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
