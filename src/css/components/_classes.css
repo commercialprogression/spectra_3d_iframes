@@ -74,7 +74,7 @@
   font-size: 11px;
   vertical-align: top;
 }
-a .ent-reg {
+.link-underline.ent-reg {
   display: inline-block;
   border-bottom: 1px solid #44a4e5;
   padding-bottom: 3px;
