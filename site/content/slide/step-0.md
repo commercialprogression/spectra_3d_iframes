@@ -10,5 +10,5 @@ next: "slide/2"
 <h3 class="gotham">Simplified Layering Technique Interactive Demo</h3>
 For esthetically demanding anterior cases, TPH Spectra<span class="super">®</span> ST Effects Composite works with TPH Spectra<span class="super">®</span> ST Composite in a simplified layering technique.
 
-<a class="ds-blue" href="#">Learn more about TPH Spectra<span class="ent-reg link-underline">®</span> ST composites</a>
+<a class="ds-blue" target="_blank" href="https://www.dentsplysirona.com/en-us/products/restorative/tph-spectra-st-effects.html">Learn more about TPH Spectra<span class="ent-reg link-underline">®</span> ST composites</a>
 <!--more-->
