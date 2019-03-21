@@ -1,0 +1,8 @@
+- id: kiosk_mode
+  translation: "Kioskmodus"
+- id: patient_portal
+  translation: "Patientenportal"
+- id: logout
+  translation: "Ausloggen"
+- id: terms_of_use
+  translation: "Nutzungsbedingungen"

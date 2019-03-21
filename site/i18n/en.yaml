@@ -1,0 +1,20 @@
+- id: kiosk_mode
+  translation: "Kiosk Mode"
+- id: patient_portal
+  translation: "Patient Portal"
+- id: logout
+  translation: "Log Out"
+- id: terms_of_use
+  translation: "Terms of Use"
+- id: close
+  translation: "Close"
+- id: reimagine_dentures
+  translation: "Reimagine dentures"
+- id: forgot_password
+  translation: "Forgot Password"
+- id: register
+  translation: "Register"
+- id: password
+  translation: "Password"
+- id: email
+  translation: "email"
