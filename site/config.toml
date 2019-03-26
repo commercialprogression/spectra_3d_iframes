@@ -11,7 +11,6 @@ baseurl = "/"
 [languages]
   [languages.tph]
     weight = 1
-
     languageName = "tph"
     title = "TPH Spectra ST Effects"
     contentDir = "content/tph"
