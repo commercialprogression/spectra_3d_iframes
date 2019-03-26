@@ -2,7 +2,7 @@
 {{ partial "nav" . }}
 
 <div id="landing-page" class="mw1440 center container ph2">
-  <div class="mw1100 center mv6">
+  <div class="mw1150 center mv6">
       {{ $paginator := .Paginate (where .Data.Pages "Type" "slide").ByWeight }}
       <ul class="pagination pa0 relative">
         <hr class="pagination-connect">

@@ -24,6 +24,6 @@ baseurl = "/"
 
   [languages.ceramx]
     langaugeName = "ceramx"
-    title = "Ceram.X Spectra ST Effects"
+    title = "Ceram.x Spectra ST Effects"
     weight = 3
     contentDir = "content/ceramx"
