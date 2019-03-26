@@ -6,24 +6,23 @@ PaginatePath = "slide"
 Paginate = 1
 defaultContentLanguageInSubdir = true
 DefaultContentLanguage = "tph"
+baseurl = "/"
 
 [languages]
   [languages.tph]
     weight = 1
-    baseurl = "/"
+
     languageName = "tph"
     title = "TPH Spectra ST Effects"
     contentDir = "content/tph"
 
   [languages.neo]
-    baseURL = "/neo"
     langaugeName = "neo"
     title = "Neo Spectra ST Effects"
     weight = 2
     contentDir = "content/neo"
 
   [languages.ceramx]
-    baseURL = "/ceramx"
     langaugeName = "ceramx"
     title = "Ceram.X Spectra ST Effects"
     weight = 3
