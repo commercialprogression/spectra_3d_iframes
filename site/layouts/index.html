@@ -37,7 +37,7 @@
           <a href="{{ $paginator.Next.URL }}" class="gotham button btn-orange">{{ if eq $paginator.PageNumber 1 }}Get Started{{ else }}Next{{ end }}</a>
         {{ end }}
         {{ if eq $paginator.PageNumber 7 }}
-          <a href="{{ $.Site.BaseURL }}" class="gotham button btn-orange">Start Over</a>
+          <a href="{{ "/" | relLangURL }}" class="gotham button btn-orange">Start Over</a>
         {{ end }}
       </div>
       {{ if eq $paginator.PageNumber 7 }}

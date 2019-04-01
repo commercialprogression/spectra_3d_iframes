@@ -4,8 +4,8 @@
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 PaginatePath = "slide"
 Paginate = 1
-defaultContentLanguageInSubdir = true
 DefaultContentLanguage = "tph"
+defaultContentLanguageInSubdir = true
 baseurl = "/"
 
 [languages]
