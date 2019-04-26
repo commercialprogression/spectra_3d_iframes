@@ -1,8 +1,6 @@
-- id: kiosk_mode
-  translation: "Kioskmodus"
-- id: patient_portal
-  translation: "Patientenportal"
-- id: logout
-  translation: "Ausloggen"
-- id: terms_of_use
-  translation: "Nutzungsbedingungen"
+- id: brand
+  translation: "Ceram.x"
+- id: brand_symbol
+  translation: "™"
+- id: learn_more
+  translation: "https://www.dentsplysirona.com/en/explore/restorative/ceram-x-spectra-st-family/ceramx-spectra-st-effects.html"

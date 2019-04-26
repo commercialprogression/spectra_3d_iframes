@@ -1,11 +1,28 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "TPH Spectra ST Effects"
-
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 PaginatePath = "slide"
 Paginate = 1
+DefaultContentLanguage = "tph"
+defaultContentLanguageInSubdir = true
+baseurl = "/"
+
+[languages]
+  [languages.tph]
+    weight = 1
+    languageName = "tph"
+    title = "TPH Spectra ST Effects"
+    contentDir = "content/tph"
+
+  [languages.neo]
+    langaugeName = "neo"
+    title = "Neo Spectra ST Effects"
+    weight = 2
+    contentDir = "content/neo"
+
+  [languages.ceramx]
+    langaugeName = "ceramx"
+    title = "Ceram.x Spectra ST Effects"
+    weight = 3
+    contentDir = "content/ceramx"
