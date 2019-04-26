@@ -12,9 +12,9 @@
       {{ end }}
     </div>
   </div>
-  <div id="model" class="slide-model">
+  <div id="modal" class="slide-modal">
     {{ if (.Params.obj) }}
-      <div class="dn model-close" id="modelclose">
+      <div class="dn modal-close" id="modalclose">
         <img src="/img/close-out.png" />
       </div>
       <div class="slide-object threed-object tc" data-obj="{{ .Params.obj }}" data-mtl="{{ .Params.mtl }}">
@@ -24,7 +24,7 @@
         <a class="button gotham">View Full Screen</a>
       </div>
     {{ else }}
-      <div id="model" class="slide-object threed-object">
+      <div id="modal" class="slide-object threed-object">
         <img src="/img/{{ .Params.placeholder }}" alt="" />
       </div>
     {{ end }}

@@ -7,14 +7,14 @@ if (document.getElementById("instruct-overlay")) {
 }
 
 if (document.getElementById("full-screen-button")) {
-  var model = document.getElementById("model");
+  var modal = document.getElementById("modal");
   var fullscreen = document.getElementById("full-screen-button");
   fullscreen.addEventListener("click", function(){
-    model.classList.add('full-screen');
-    modelclose.classList.add('full-screen');
-    modelclose.addEventListener("click", function() {
-      model.classList.remove("full-screen");
-      modelclose.classList.remove("full-screen");
+    modal.classList.add('full-screen');
+    modalclose.classList.add('full-screen');
+    modalclose.addEventListener("click", function() {
+      modal.classList.remove("full-screen");
+      modalclose.classList.remove("full-screen");
     });
   });
 }

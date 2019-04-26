@@ -47,11 +47,11 @@
   right: 50px;
   max-width: 10%;
 }
-.model-close.full-screen {
+.modal-close.full-screen {
   display: block;
   text-align: right;
 }
-.slide-model.full-screen {
+.slide-modal.full-screen {
   position: absolute;
   left: 0;
   right: 0;
@@ -61,16 +61,16 @@
   height: 100%;
   background-color: #000;
 }
-.slide-model.full-screen img,
-.slide-model .full-screen img {
+.slide-modal.full-screen img,
+.slide-modal .full-screen img {
   padding: 1rem;
 }
 
 @media all and (min-width: 1200px) {
-  .slide-model {
+  .slide-modal {
     max-width: 650px;
   }
-  .slide-model.full-screen {
+  .slide-modal.full-screen {
     max-width: none;
   }
 }
