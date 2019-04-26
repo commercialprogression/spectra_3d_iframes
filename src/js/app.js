@@ -8,8 +8,13 @@ import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader';
 import * as OrbitControls from 'three-orbitcontrols';
 
 // Set globals for 3d rendering.
-let threeDObjects = Array.from(document.querySelectorAll(".threed-object[data-mtl]"));
+let threeDObjects = document.querySelectorAll(".threed-object[data-mtl]");
 let renderers = {};
+
+// Polyfill for missing forEach on NodeList for IE11.
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
 
 /**
  * Main loop to instantiate models.
