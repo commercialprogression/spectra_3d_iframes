@@ -8,7 +8,7 @@ import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader';
 import * as OrbitControls from 'three-orbitcontrols';
 
 // Set globals for 3d rendering.
-let threeDObjects = document.querySelectorAll(".threed-object[data-mtl]");
+let threeDObjects = Array.from(document.querySelectorAll(".threed-object[data-mtl]"));
 let renderers = {};
 
 /**
