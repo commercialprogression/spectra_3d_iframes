@@ -1,4 +1,4 @@
-# Blender MTL File: 'TPH_ST_Effects_Teeth_3d_2.blend'
+# Blender MTL File: '2.blend'
 # Material Count: 2
 
 newmtl Material
@@ -14,7 +14,7 @@ illum 2
 newmtl Material.001
 Ns 96.078431
 Ka 1.000000 1.000000 1.000000
-Kd 1.000000 0.938686 0.597202
+Kd 1.000000 0.597202 0.597202
 Ks 1.000000 1.000000 1.000000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
