@@ -1,5 +1,5 @@
 ---
-title: "3. Palatal (lingual) Incisal-Third Restoration"
+title: "3. Dentin Core Restoration"
 mtl: TPH_ST_Effects_Teeth_3d_3.mtl
 obj: TPH_ST_Effects_Teeth_3d_3.obj
 placeholder: slide-3-placeholder.png
@@ -15,5 +15,7 @@ legend:
     color: "overcast"
 ---
 
-Before curing the previous increment, complete palatal (lingual) wall by placing {{< text-color color="salmon" >}}universal CLOUD shade{{< /text-color >}} at incisal third of the tooth.
+Next use a {{< text-color color="dusty-gold" >}}dentin shade{{< /text-color >}} to recreate the dentin core, without fully 
+extending to the proximal and incisal edges. Leave at least 1mm of depth on the vestibular surface for the universal shade. 
+For patients that have a highly translucent incisal edge, leave space on the incisal third for the enamel shade.
 <!--more-->

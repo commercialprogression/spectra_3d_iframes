@@ -7,13 +7,12 @@ weight: 6
 prev: "slide/4"
 next: "slide/6"
 legend:
-  - text: "Opaque dentin shade"
-    color: "dusty-gold"
   - text: "Universal CLOUD shade"
     color: "salmon"
   - text: "Natural tooth"
     color: "overcast"
 ---
 
-Complete facial (vestibular) portion of tooth thickness with <span class="salmon">universal CLOUD shade.</span>
+Complete restoration using the {{< text-color color="salmon" >}}universal CLOUD shade{{< /text-color >}} for the vestibular 
+(facial) surface.
 <!--more-->

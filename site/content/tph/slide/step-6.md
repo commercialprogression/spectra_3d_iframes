@@ -6,8 +6,6 @@ placeholder: slide-6-placeholder.png
 weight: 7
 prev: "slide/5"
 legend:
-  - text: "Opaque dentin shade"
-    color: "dusty-gold"
   - text: "Universal CLOUD shade"
     color: "salmon"
   - text: "Translucent enamel shade"
@@ -16,5 +14,7 @@ legend:
     color: "overcast"
 ---
 
-For a highly translucent incisal edge, use the {{< text-color color="seafoam" >}}translucent enamel shade{{< /text-color >}} on the incisal-third of the  facial (vestibular) area.
+For a highly translucent incisal edge, use the {{< text-color color="salmon" >}}universal shade{{< /text-color >}} to 
+restore the vestibular (facial) area, leaving space on the incisal third for the 
+{{< text-color color="seafoam" >}}enamel shade{{< /text-color >}}.
 <!--more-->

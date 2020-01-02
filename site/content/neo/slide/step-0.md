@@ -1,7 +1,7 @@
 ---
 title: ""
 subtitle: ""
-placeholder: slide-0-placeholder.png
+placeholder: slide-0-placeholder.jpg
 order: 0
 weight: 1
 next: "slide/2"
